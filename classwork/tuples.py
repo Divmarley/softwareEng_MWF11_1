@@ -39,3 +39,6 @@ fruit = ("apple", "bananat", "cherry")
 lol= fruits+fruit
 print(lol)
 print(lol.index("bananat"))
+
+
+friends = ("kofi","ama","joe")
