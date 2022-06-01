@@ -18,7 +18,7 @@
 
 # print(info("kofi","male")) 
 # print(info("Ama","female")) 
-
+ 
 
 
 def children(**Child):
@@ -27,9 +27,38 @@ def children(**Child):
 # print(children("kofi", "ama","kojo"))
 # print(children("Killy")) 
 
-bb= children(a="milly",b="kofi") 
-print(type(bb))
+# bb= children(a="milly",b="kofi") 
+# print(type(bb))
 
 
 
 
+
+
+
+# Lambda
+# A lambda function is a small anonymous function.
+
+# A lambda function can take any number of arguments,
+#  but can only have one expression.
+
+# syntax
+
+# lambda arguments :expression
+
+
+
+# add =lambda a,b: a+b
+# print(add(20,50)) 
+# a*b - c*d
+
+
+# def func(k):
+#     return lambda a : a * k
+# kk =func(2)
+
+# print(kk(20))
+
+def greet(gr):
+    return gr
+print(greet())
