@@ -9,6 +9,9 @@ thisdict = {
 
 """ 
 
+from operator import xor
+
+
 person = {
   "name": "Ford",
   "age": 30,
@@ -61,9 +64,9 @@ person = {
 # }
 
 # print(myfamily["firstMember"]['children']['secChild'])
+secchild="kofi",
 
-
-
+    
 grandmum = {
   'father':{
     "name":"daddy",
@@ -81,10 +84,19 @@ grandmum = {
   },
 }
 
-print(grandmum["fatherBother"]["name"])
-print(grandmum["fatherBother"]["children"]["secchild"])
-# end Nested Dictionaries
+# print(grandmum["fatherBother"]["name"])
+# print(grandmum["fatherBother"]["children"]["secchild"])
 
+# del grandmum
+# grandmum.clear()
+# print(grandmum)
+
+# end Nested Dictionaries
+yourname=  ["kofi","sika"]
+# print(type(yourname))
+# # end Nested Dictionaries
+# print(type(yourname[0][0]))
+# # print(yourname[0][0] + yourname[1][0])
 
 # methods 
 
@@ -101,11 +113,5 @@ popitem()	            Removes the last inserted key-value pair
 setdefault()	        Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
 update()	            Updates the dictionary with the specified key-value pairs
 values()	            Returns a list of all the values in the dictionary
-
-
-
-
-
-
-
+ 
 """
