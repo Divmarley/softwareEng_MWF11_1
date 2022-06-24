@@ -1,63 +1,54 @@
-from contextlib import nullcontext
-import datetime as dt 
-import math as m 
-import json
-from multiprocessing.dummy import Array
 
-"kofi kumi sika kokw ssd"
-
-x= [ "kofi","sika"]
-
-for k in x:
-    print(k[0])
-
-# todays = dt.datetime.now()
-
-# print(todays.year)
-# print(todays.day)
-# print(todays.month)
-# print(todays.strftime("%a"))
-# print(todays.strftime("%A"))
-# print(todays.strftime("%b"))
-# print(todays.strftime("%H"))
-# print(todays.strftime("%M"))
-# print(todays.strftime("%X"))
-# print(todays.strftime("%x"))
-# print(todays.strftime("%j"))
-
-x ='{"brand": "Ford","model": "Mustang","year": 1964}'
-k =json.loads(x)
-
-q = json.dumps(k)
-# print(type(q))
+import datetime as dt
 
 
-fruits =  ['kiwi','orange'] 
-newFruits = json.dumps(fruits)
-print(type(newFruits))
-
-# When you convert from Python to JSON,
-#  Python objects are converted into the JSON (JavaScript) equivalent:
-# None  ---> null
-# dict ----> object
-# list ----> Array 
-# tuple ---> Array
-# str -----> String
-# int ----> Number
-# float ----> Number
-# True ----> true
-# False ----> false
+today = dt.datetime.now()
+# print(today.strftime(f"{'%Y'}/{'%B'}/{'%A'}"))
 
 
-x = {
-  "name": "John",
-  "age": 30,
-  "married": True,
-  "divorced": False,
-  "children": ("Ann","Billy"),
-  "pets": None,
-  "cars": [
-    {"model": "BMW 230", "mpg": 27.5},
-    {"model": "Ford Edge", "mpg": 24.1}
-  ]
-}
+# print("current date dor today is  :" , today)
+# print(today.time())
+
+# 2022/june/friday  12:08
+
+
+
+
+# strftime()
+
+# print(today.strftime("%a"))
+# print(today.strftime("%A"))
+# print(today.strftime("%b"))
+# print(today.strftime("%B"))
+# print(today.strftime("%y"))
+
+# 2022/june/friday
+# day = today.strftime("%A")
+# months = today.strftime("%B")
+# print(day + /" +months + "/" +str(today.year) )
+
+
+
+
+
+# hour = today.strftime("%H")
+# hour = today.strftime("%M")
+# hour = today.strftime("%p")  
+
+# 2022/june/friday
+
+# revisit 
+# functions
+
+# a function is a block of code with will run only when it is being called
+# you can pass data into a function by args
+# return  
+
+"""function syntax
+def sleep(): ---> defined the function
+    do somthing...
+
+sleep()
+
+"""
+ 
