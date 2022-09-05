@@ -1,0 +1,15 @@
+nav ul{
+    padding: 20px 0 20px 0; 
+}
+
+body{
+    background-color: red;
+}
+
+a{
+    font-size: 20px !important;
+}
+
+#inputSe{
+    width:400px !important;
+}
