@@ -1,0 +1,42 @@
+course outline  for javaScripts
+introduction 
+diplay or output
+    console.log()
+    document.write()
+    window.alert()
+    innerHtml="marley"  <div id="demo">marley</div>
+    textContent="marley"  <div id="demo">marley</div>
+sytanx
+    commenting /comment
+    datatypes
+    variables
+    operators
+        arithmethic operators
+        Assignment operators
+        Comparison operators
+        logical operators
+        Bitwise Operators
+        type  Operators
+    
+    function 
+    scope
+    objects
+    events
+    string
+    number
+    Arrays
+    Date
+    Random
+    if ..else
+    loops
+    iterables
+    set 
+    maps
+    classes
+    modules
+    JS Versions
+
+
+
+
+

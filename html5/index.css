@@ -13,3 +13,22 @@ a{
 #inputSe{
     width:400px !important;
 }
+
+.fonttttt{
+    font-size: 90px;
+}
+
+a{
+    color: black !important;
+}
+
+a:hover{
+    color: orange !important;
+}
+
+
+.bb{
+    position: relative;
+    margin: 10px auto 0 auto;
+}
+ 

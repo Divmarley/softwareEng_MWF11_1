@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>jumia clone</title>
-    <!-- start css files cdn -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <!-- end css files cdn -->
 
-    <link rel="stylesheet" href="./bos/css/bootstrap.css">
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body > 
-    <nav class="nav bg-white justify-content-center"> 
-      <ul class="nav" >
-        <li class="nav-item" style="margin:0 100px 0 0 ;">
-          <a class="nav-link active" href="#">logo</a>
-        </li>
-        <li class="nav-item">
-          <div class="col-auto">
-            <form class="row">
-              <div class="col-auto ">
-                <input type="text" id="inputSe" class="form-control" id="search" placeholder="Search products, brands and categories">
-              </div>
-              <div class="col-auto ">
-                <button type="submit" class="btn text-uppercase btn-warning text-light">Search</button>
-              </div>
-            </form>
-          </div>
-        </li>
-       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Help
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">cart</a>
-          
-        </li> 
-      </ul>
-    </nav>
+<head>
+  <title>jumia clone</title>
+  <!-- start css files cdn -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- end css files cdn -->
 
-    <div class="container  mt-3 " style="height: 600px; width:100%;">
-   
-      <div class="container-fluid   row justify-content-center" >
-        <div class=" bg-primary m-2 col-lg-3 col-md-12 col-sm-4" style="height: 300px; ">
-          card
+  <link rel="stylesheet" href="./bos/css/bootstrap.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="width:100%">
+  <nav class="nav bg-white justify-content-center">
+    <ul class="nav">
+      <li class="nav-item" style="margin:0 100px 0 0 ;">
+        <a class="nav-link active" href="#">logo</a>
+      </li>
+      <li class="nav-item">
+        <div class="col-auto">
+          <form class="row">
+            <div class="col-auto ">
+              <input type="text" id="inputSe" class="form-control" id="search"
+                placeholder="Search products, brands and categories">
+            </div>
+            <div class="col-auto ">
+              <button type="submit" class="btn text-uppercase btn-warning text-light">Search</button>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Help
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black" href="#">cart</a>
+
+      </li>
+    </ul>
+  </nav>
+
+      <div class="container bg-success row justify-content-center bb" style="width:100%">
+        <div class="card  bg-white m-2 col-lg-2 col-md-12 col-sm-4" style="height: 500px; ">
+          <ul type="none" class="">
+            <li class="mt-2"><a href=""><i class="fa fa-user"></i> <i class="fa-solid fa-house-user"></i>An item</a></li>
+            <li class="mt-2"><i class="fa fa-key"></i>A second item</li>
+            <li class="mt-2"> <i class="fa-light fa-house fonttttt"></i>A third item</li>
+            <li class="mt-2">A fourth item</li>
+            <li class="mt-2">And a fifth one</li>
+          </ul>
         </div>
 
-        <div class=" bg-primary m-2 col-lg-5 col-md-12 col-sm-4" style="height: 300px; ">
+        <div class="card m-2 col-lg-6 col-md-12 col-sm-4" style="height: 500px; ">
           Card 2
         </div>
-        <div class=" bg-primary  m-2 col-lg-3 col-md-12 col-sm-4" style="height: 300px; ">
-          Card 3
+        <div class="m-2 col-lg-2 col-md-12 col-sm-4" style="height: 500px;  padding-left: 0px; padding-right: 0px; ">
+          <div class="container bg-white" style="height: 245px; ">Card 3</div>
+          <div class="container bg-white" style="height: 245px; margin:10px 0 0 0 ">Card 3</div>
         </div>
-      </div>
+    <!-- </div> -->
+    <div class="container m-2 col-lg-12 col-md-12 col-sm-4 bb" style="height: 100px; ">
+      Card 2
     </div>
-    
+  </div>
 
 
-    <!-- start js files cdn -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- end js files cdn -->
-    <!-- <script src="./bos/js/bootstrap.js"></script> -->
-  </body>
+
+
+  <!-- start js files cdn -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- end js files cdn -->
+  <!-- <script src="./bos/js/bootstrap.js"></script> -->
+</body>
+
 </html>
