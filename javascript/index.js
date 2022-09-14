@@ -13,7 +13,7 @@ textContent="marley"  <div id="demo">marley</div>
 // window.alert("funny him")
 
 // document.getElementById('demo').innerHTML ='hey marley'
-// document.getElementById('demo').textContent ='hey marley'
+// document.getElementById('demo').textContent ='hey yyyyyy'
 /*jbjhkh */
 
 // 'ug834y83y047384'
@@ -54,10 +54,12 @@ textContent="marley"  <div id="demo">marley</div>
     // /  division
     // *  -mult
     // -  -sub
+    // ÷÷
+    // --
 
-    let a ,b ;
-    a = 20;
-    b =40;
+    // let a ,b ;
+    // a = 20;
+    // b =40;
 
 //    console.log( a + b);
 //    console.log( a - b);
@@ -82,7 +84,7 @@ textContent="marley"  <div id="demo">marley</div>
         Operator	           Example	               Same As
         =	                   x = y	                 x = y
         +=	                   x += y	                 x = x + y
-        -=	                   x -= y	                 x = x - y
+        -=	                   y -= x	                 y = y - x
         *=	                   x *= y	                 x = x * y
         /=	                   x /= y	                 x = x / y
         %=	                   x %= y	                 x = x % y
@@ -92,14 +94,205 @@ textContent="marley"  <div id="demo">marley</div>
 
     */
 
-        console.log(a+=b); 
+        // console.log(a+=b); 
         
         // a= a + b;
         // console.log(a);
 
 
 
-    // Comparison operators
+ 
+
+    /* Comparison operators
+        4 == 10 -->false
+        Operator        Description
+        ==               equal to
+        ===	             equal value and equal type
+        !=               not equal
+        >                greater than
+        <	             less than
+        >=	             greater than or equal to
+        <=	             less than or equal to 
+        ?	             ternary operator
+    */
+
+        let a =30;
+        let b =40;
+        // console.log(a < b);
+
+        // if (a==b){
+        //     console.log('yes');
+        // }else{
+        //     console.log('no');
+
+        // }
+
+        // a==b ? console.log('yessss') :console.log('nooooo');
+
+        let name ={
+            name :"kofi",
+            age : 40
+
+        }
+
+        // console.log(name.name);
+
+
+
+
+    
     // logical operators
 
+
+    /*Exercise:
+        Divide 10 by 2, and alert the result: 
+        let ansewer = 10 / 2; 
+        console.log(ansewer )
+        alert(alert)
+    
+    
+    */
+
+        // let ansewer = 10 / 2; 
+        // console.log(ansewer )
+        // alert(alert)
+
+    // Coding Challenge #1
+
+    /*
+    Mark and John are trying to compare their BMI (Body Mass Index),
+     which is calculated using the formula: BMI = mass / height ** 2 
+     or mass / (height * height). 
+     (mass in kg and height in meter).
+
+    1. Store Mark's and John's mass and   in variables
+    2. Calculate both their BMIs using the formula (you can even implement both versions)
+    3. Create a boolean variable 'markHigherBMI' containing information 
+    about whether Mark has a higher BMI than John.
+
+    TEST DATA 1: Marks weights 78 kg and is 1.69 m tall.
+     John weights 92 kg and is 1.95 m tall.
+    TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. 
+    John weights 85 kg and is 1.76 m tall.
+
+    GOOD LUCK 😀
+    */
+
+// solution 
+//Marks variable
+let MarksWeight=78;
+let MarksHeight=1.69;
+
+//johns variable
+let johnsWeight=92;
+let johnsHeight=1.88;
+
+//formula for bmi
+// BMI = mass / height ** 2  or mass / (height * height). 
+
+
+//johns BMI 
+let jonhsBMI = johnsWeight/johnsHeight**2;
+// let jonhsBMI = johnsWeight/(johnsHeight*johnsHeight);
+// console.log(jonhsBMI)
+
+//johns BMI 
+let MarksBMI = MarksWeight/MarksHeight**2;
+// let MarksBMI = johnsWeight/(johnsHeight*johnsHeight);
+// console.log(MarksBMI);
 // end Operator
+// let markHigherBMI = MarksBMI >jonhsBMI;
+// console.log(markHigherBMI);
+
+
+// console.log(`johns bmi is ${jonhsBMI}, marks bmi is ${MarksBMI},`);
+
+
+//  
+/*function 
+        is a block of code which is desidned to perform 
+        a specific task.
+        function can only work(function) when it is being called 
+        or
+        What is a Function ?
+
+A Function is a block of code that is designed to perform a task and executed when it is been called or invoked.
+There are 3 ways of writing a function in JavaScript:
+
+        Function Declaration
+        Function Expression
+        Arrow Function
+
+
+        how to create a function syntax
+        function func_name(){
+            // what function is going to do ...
+        }
+
+        you can pass data into a function through a  the parameter
+        and recieve data through argument 
+
+*/ 
+// function func_name(){
+//     // what function is going to do ...
+//     let a = 12;
+//     let b = 30;
+//     // let ansewer=;
+
+//     return  a +b;
+// }
+// console.log(func_name());
+  
+
+// function calculat_exponent(unkwn1,unkwn2){
+//     let a  = unkwn1;
+//     let b  = unkwn2;
+//     let result = a**b;
+//     return result;
+// }
+// console.log(calculat_exponent(2,12))
+
+// function diplay_class_members(name) {
+//     return name;
+// }
+
+// Function Expression
+// const diplay_class_members =function (name) {
+//     return name;
+// }
+
+
+// Arrow Functions
+// const diplay_class_members = (name) =>{
+//     return name;
+// }
+
+// console.log(diplay_class_members("marley"));
+// console.log(diplay_class_members("ama"));
+// console.log(diplay_class_members("kojo"));
+// console.log(diplay_class_members("yaw"));
+
+
+// function add_two_numbers(){
+//     a = 20;
+//     b = 30;
+//     c= a+b;
+//     return c
+    
+
+// }
+
+// const add_two_numbers = (a, b)=>{ return a+b;}
+
+// console.log(add_two_numbers(20,30));
+
+// object
+
+// console.log(2022- 1957);
+
+function calculat_age(currentYear,yearBorn){
+    return currentYear- yearBorn;
+}
+
+console.log(calculat_age(2019,1957));
+console.log(calculat_age(2022,1957));
