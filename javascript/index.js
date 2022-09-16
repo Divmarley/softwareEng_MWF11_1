@@ -290,9 +290,93 @@ There are 3 ways of writing a function in JavaScript:
 
 // console.log(2022- 1957);
 
-function calculat_age(currentYear,yearBorn){
-    return currentYear- yearBorn;
+// function calculat_age(currentYear,yearBorn){
+//     return currentYear- yearBorn;
+// }
+
+// const calculat_age =function (currentYear,yearBorn){
+//     return currentYear- yearBorn;
+// }
+
+
+// const calculat_age = (currentYear,yearBorn)=>{
+//    return currentYear- yearBorn}
+// console.log(calculat_age(2019,1957));
+// console.log(calculat_age(2022,1957));
+
+
+// function declearation 
+// function addition_calc(firstNumber=0,secondNumber=0){
+//     return  firstNumber +secondNumber;
+// }
+// console.log(addition_calc());
+
+
+// function expression 
+// const addition_calc = function (firstNumber=0,secondNumber=0){
+//     return  firstNumber +secondNumber;
+// }
+// console.log(addition_calc());
+
+//  arrow function 
+
+// const addition_calc = (firstNumber=0,secondNumber=0)=>firstNumber +secondNumber;
+// console.log(addition_calc(100,200));
+
+
+
+// objects
+const phone ={
+    //properties
+    name:"Iphone 14",
+    memory:'64gig',
+    //methods
+    calling: ()=> `${phone.name}  can be used for calling`,
+    messaging:function(){
+        return "the phone can be used for messaging";
+    }
+}
+// console.log(phone.name);
+// console.log(phone.calling());
+// console.log(phone.messaging());
+
+
+const car = {
+    // properties
+    name: "BMW",
+    color:"red",
+    model:2021,
+
+    // methods
+    info:function(){
+        return `the name of my car is ${this.name} and it has a color of ${this.color} and it was made in the year ${this.model}`
+    }
+    
 }
 
-console.log(calculat_age(2019,1957));
-console.log(calculat_age(2022,1957));
+// console.log(car.name);
+// console.log(car.info());
+
+// car.size =4000;
+// car.speed =function(){
+//     return 'wesdrews'
+// };
+
+// console.log(car);
+
+const jonasAccount = {
+    owner: 'Jonas Schmedtmann',
+    movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
+    interestRate: 1.2, // %
+    pin: 1111,
+    information: function () {
+        return `welcome mr/mis ${this.owner} you have made this ${this.movements} transcations with ${this.interestRate} interest Rate your password is ${this.pin}`;
+    }
+};
+// jonasAccount.username = 'js';
+// jonasAccount.owner = 'sika kumi';
+
+
+
+console.log(jonasAccount.information());
+  
