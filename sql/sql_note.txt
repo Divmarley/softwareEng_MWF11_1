@@ -1,0 +1,64 @@
+SQL is a standard language for storing, manipulating and retrieving data in databases.
+These SQL commands are mainly categorized into four categories as:
+    1.DDL - Data Definition Language.
+    2.DQl – Data Query Language.
+    3.DML – Data Manipulation Language.
+    4.DCL – Data Control Language.
+
+
+Query
+
+SElECT c FROM men;
+
+SELECT * FROM table_name;
+
+
+select students whose balances is not equal to 0
+
+
+
+SELECT column1, column2, ... FROM table_name WHERE condition;
+
+
+The SQL AND, OR and NOT Operators
+The WHERE clause can be combined with AND, OR, and NOT operators.
+
+The AND and OR operators are used to filter records based on more than one condition:
+
+The AND operator displays a record if all the conditions separated by AND are TRUE.
+The OR operator displays a record if any of the conditions separated by OR is TRUE.
+The NOT operator displays a record if the condition(s) is NOT TRUE.
+
+AND Syntax
+
+
+
+
+
+The SQL ORDER BY Keyword
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+ORDER BY Syntax
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+
+
+CREATE TABLE  post(
+    id INT(255),
+    title VARCHAR(255),
+    description TEXT(10000)
+);
+
+INSERT INTO `post` (`id`,`title`,`description`) VALUES ('2','games','play is paid');
+
+
+create a table call product
+
+id 
+name
+price 
+quantity
