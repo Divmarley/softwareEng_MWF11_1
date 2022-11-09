@@ -62,3 +62,109 @@ id
 name
 price 
 quantity
+
+
+
+The SQL DROP TABLE Statement
+The DROP TABLE statement is used to drop an existing table in a database.
+
+Syntax
+DROP TABLE table_name;
+
+
+
+SQL ALTER TABLE Statement
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+
+The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+
+
+
+ALTER TABLE - ADD Column
+To add a column in a table
+syntax:
+
+ALTER TABLE table_name ADD column_name datatype;
+
+
+
+ALTER TABLE - DROP COLUMN
+To delete a column in a table, use the following syntax (notice that some database systems don't allow deleting a column):
+
+ALTER TABLE table_name DROP COLUMN column_name;
+
+
+ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+
+
+
+SQL Constraints
+SQL constraints are used to specify rules for the data in a table.
+
+SQL constraints are used to specify rules for the data in a table. 
+Constraints are used to limit the type of data that can go into a table. 
+This ensures the accuracy and reliability of the data in the table. 
+If there is any violation between the constraint and the data action, 
+the action is aborted.
+
+
+The following constraints are commonly used in SQL:
+
+NOT NULL - Ensures that a column cannot have a NULL(empty) value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+DEFAULT - Sets a default value for a column if no value is specified
+
+
+student_table
+id       name 
+1        kofi 
+2        ama
+
+
+student_acc_table
+
+id       student_id        balance
+1          1                 200
+2          1                 250
+3          2                 100
+
+
+
+create table posts(
+    ID int PRIMARY KEY,
+    title varchar(255) NOT NULL,
+    description TEXT NOT NULL 
+)
+
+
+create table author(
+    ID int,
+    name varchar(255) NOT NULL,
+    PRIMARY KEY (ID)
+)
+
+create table posts(
+    ID int,
+    title varchar(255) NOT NULL,
+    description TEXT NOT NULL ,
+    author_id INT,
+    PRIMARY KEY (ID)
+)
+
+
+
+author_table
+id       name 
+1        kofi 
+2        ama
+
+
+post_table
+
+id               title                     description            author_id
+1                jack                      jack will fll            1
+
+
+
