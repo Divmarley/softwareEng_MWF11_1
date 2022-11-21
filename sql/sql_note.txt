@@ -296,3 +296,64 @@ CREATE TABLE `order`(
     
     
 )
+
+
+
+
+///// POS 
+
+create databese marleyInPOS
+
+tables
+accounts
+
+CREATE TABLE account(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone_number int NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    account_type int(255) NOT NULL, ---->admin, sale,ap
+    date_created TIMESTAMP,
+    date_updated TIMESTAMP,
+ 
+)
+
+
+
+
+
+inventory
+CREATE TABLE product(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(6,2)  NOT NULL, 
+    category VARCHAR(255) NOT NULL,
+    image VARCHAR(255),
+    quantity int NOT NULL,
+    availabilty int NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    date_created TIMESTAMP,
+    date_updated TIMESTAMP,
+    author VARCHAR(255)
+)
+
+branche
+CREATE TABLE branch(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    branch_manager VARCHAR(255) NOT NULL,
+    
+)
+suppliers
+
+CREATE TABLE supplier(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    branch_product_supplied int NOT NULL,
+     
+    phone_number int NOT NULL
+    
+)
