@@ -187,3 +187,66 @@ create table posts(
 
 user -> id, name, email
 priduct id, name, description,price,user_id
+
+
+
+
+The data type of a column defines what value the column can hold: integer, character, money, date and time, binary, and so on.
+
+SQL Data Types
+Each column in a database table is required to have a name and a data type.
+
+An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.
+
+
+String Data Types
+
+Data type	             Description	          
+char(n)                  A FIXED length string (can contain letters, numbers, and 
+                        special characters). The size parameter specifies the column length in 
+                        characters - can be from 0 to 255. Default is 1
+
+
+VARCHAR(size)	            A VARIABLE length string (can contain letters, numbers,
+                             and special characters). The size parameter specifies 
+                             the maximum string length in characters - can be from 0 to 65535
+
+BINARY(size)	            Equal to CHAR(), but stores binary byte strings.
+                            The size parameter specifies the column length in bytes. Default is 1
+
+
+VARBINARY(size)	            Equal to VARCHAR(), but stores binary byte strings.
+                             The size parameter specifies the maximum column length in bytes.
+
+
+TINYBLOB	                For BLOBs (Binary Large Objects). Max length: 255 bytes
+
+
+TINYTEXT	                Holds a string with a maximum length of 255 characters
+
+
+TEXT(size)	                Holds a string with a maximum length of 65,535 bytes
+
+
+BLOB(size)	                For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data
+
+
+MEDIUMTEXT	                Holds a string with a maximum length of 16,777,215 characters
+
+
+
+Numeric Data Types
+Data type	                                        Description
+INT
+BIGINT
+BOOLEAN
+BOOL ***(we will check)
+FLOAT
+DECIMAL
+
+
+
+
+
+Date and Time Data Types
+MS Access Data Types
