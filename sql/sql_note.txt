@@ -250,3 +250,49 @@ DECIMAL
 
 Date and Time Data Types
 MS Access Data Types
+
+
+
+
+
+//E-com
+create databese marleyIn
+
+product id name price image quantity description 
+
+
+order id  Order number Date Total Payment method
+
+cart id product_id quantity price
+
+
+
+items_bought
+payments
+
+
+CREATE TABLE product(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(6,2)  NOT NULL, 
+    category VARCHAR(255) NOT NULL,
+    image VARCHAR(255),
+    quantity int NOT NULL,
+    availabilty int NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    date_created TIMESTAMP,
+    date_updated TIMESTAMP,
+    author VARCHAR(255)
+)
+
+
+CREATE TABLE `order`(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    priduct_id INT,
+    order_number INT,
+    total_price DECIMAL(6,2),
+    payment_method varchar(255),
+    date_of_payment TIMESTAMP
+    
+    
+)
