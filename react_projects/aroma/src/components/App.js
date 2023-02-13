@@ -6,6 +6,7 @@ import Layout from '../pages/Layout';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import Admin from '../pages/Admin';
+import ProductDetail from '../pages/ProductDetail';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route index element={<Home/>} />
             <Route path="contact" element={<Contact />} />
             <Route path="admin" element={<Admin />} />
+            <Route path="detail/:id" element={<ProductDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

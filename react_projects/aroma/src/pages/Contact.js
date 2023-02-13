@@ -54,11 +54,11 @@ export default function Contact() {
           </div>
         </div>
         <div class="col-md-8 col-lg-9">
-          <form action="#/" class="form-contact contact_form"   method="post" id="contactForm" novalidate="novalidate">
+          <form action="/" class="form-contact contact_form"   method="post" id="contactForm" novalidate="novalidate">
             <div class="row">
               <div class="col-lg-5">
                 <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name" />
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name"  required/>
                 </div>
                 <div class="form-group">
                   <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address" />

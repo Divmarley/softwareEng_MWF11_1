@@ -5,28 +5,12 @@ import ProductCard from '../components/ProductCard';
 
 export default function Home() {
   const [product, setProduct] = useState();
-  // useEffect(() => {
-  //   fetch('http://localhost:3002/products')
-  //     .then((res) => console.log(res.json()))
-  //     .then((data) => setProduct(data))
-  //     .catch((res) => console.log(res));
-  // }, []);
+  useEffect(() => {
+    fetch('http://localhost:8080/')
+      .then((res) => res.json())
+      .then((data) => setProduct(data));
+  }, []);
 
-  // useEffect(() => {
-  //   fetch('http://localhost:3002/products')
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data))
-  //     .catch((res) => res);
-  // }, []);
-
-  // {product.map((v)=>console.log(v.id))}
-  useEffect(()=>{
-    fetch('http://localhost:3002/products')
-    .then((res)=>res.json())
-    .then((data)=>setProduct(data))
-  },[])
-
-;
   return (
     <main className='site-main'>
       <section className='hero-banner'>
@@ -66,7 +50,6 @@ export default function Home() {
             <a href='#' className='hero-carousel__slideOverlay'>
               <h3>Wireless Headphone</h3>
               <p>Accessories Item</p>
-            
             </a>
           </div>
           <div className='hero-carousel__slide'>
@@ -95,11 +78,18 @@ export default function Home() {
             </h2>
           </div>
           <div className='row'>
-            { product &&
-              product.map((v)=>{
-              return <ProductCard  price={v.price} title={v.name}/>})
-            }
-            
+            {product &&
+              product.map((value) => {
+ 
+                return (
+                  <ProductCard
+                    key={value.id}
+                    title={value.name}
+                    price={ value.price}
+                    image='img/r4.jpg'
+                  />
+                );
+              })}
           </div>
         </div>
       </section>

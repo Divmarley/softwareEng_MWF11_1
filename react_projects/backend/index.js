@@ -36,14 +36,22 @@ const connection = mysql.createConnection({
 //     }
 // })
 
-// connection.query('SELECT * FROM product', (err, result) => {
-//   if (err) {
-//     console.log(err.sqlMessage);
-//   } else {
-//     console.log(result);
-//   }
-// });
-
+// app.get('/createtable',(req,res)=>{
+//   connection.query(`CREATE TABLE product(
+//     id INT PRIMARY KEY AUTO_INCREMENT,
+//     name VARCHAR(255) NOT NULL,
+//     price INT NOT NULL,
+//     image VARCHAR(300) NULL,
+//     category VARCHAR(200) NULL
+//   )`, (err, result) => {
+//     if (err) {
+//       console.log(err.sqlMessage);
+//     } else {
+//       console.log('done!!!');
+//     }
+//   });
+  
+// })
 app.get('/', (req, res) => {
   connection.query('SELECT * FROM product', (err, result) => {
     if (err) {
@@ -56,20 +64,24 @@ app.get('/', (req, res) => {
 
 app.post('/create', (req, res) => {
   const name = req.body.name;
+  const price = req.body.price;
+  const image = req.body.image;
+  const category = req.body.category;
   connection.query(
-    'INSERT INTO product(name) VALUES (?)',
-    [name],
+    'INSERT INTO product(name,price,image,category) VALUES (?,?,?,?)',
+    [name,price,image,category],
     (err, result) => {
       if (err) {
         console.log(err.sqlMessage);
       } else {
-        console.log(result);
+        console.log(result.message='sent');
       }
     }
   );
 });
 
 app.delete('/delete/:id', (req, res) => {
+  console.log('loloollooloolo');
   const id = req.params.id;
   connection.query('DELETE FROM product WHERE id = ?', [id], (err, result) => {
     if (err) {

@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-export default function ProductCard({ price, title }) {
+export default function ProductCard({ price, title,catgory ,image}) {
   return (
     <div className='col-md-6 col-lg-4 col-xl-3'>
       <div className='card text-center card-product'>
         <div className='card-product__img'>
-          <img className='card-img' src='img/product/product1.png' alt='' />
+          <img className='card-img' src={image} alt='' />
           <ul className='card-product__imgOverlay'>
             <li>
               <button>
@@ -27,7 +27,7 @@ export default function ProductCard({ price, title }) {
           </ul>
         </div>
         <div className='card-body'>
-          <p>Accessories1</p>
+          <p>{catgory}</p>
           <h4 className='card-product__title'>
             <a href='single-product.html'>{title}</a>
           </h4>
